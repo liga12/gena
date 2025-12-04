@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+}
+
+.dropdown-menu {
+    min-width: 1rem;
+}
+
+.row {
+    background-color: black;
+}
+
+.site-section-heading {
+    color: white;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: x-large;
+}
+
+.navbar-brand {
+    font-size: x-large;
+}
+
+/* 1. Родительский контейнер */
+.main-image-wrapper {
+    /* Обязательно: устанавливаем относительное позиционирование,
+       чтобы дочерние элементы позиционировались относительно него */
+    position: relative;
+    /* Убедимся, что контейнер имеет такую же ширину, как и изображение */
+    display: inline-block; /* или width: 100%; */
+}
+
+/* Общие стили для navbar, чтобы бренд был крупным */
+.navbar-brand {
+    font-size: 2rem; /* Увеличим размер бренда */
+    color: white !important; /* На случай, если нужно явно задать цвет */
+    padding-left: 15px; /* Небольшой отступ слева, если нужно */
+}
+
+/* Стили для развернутого мобильного меню (применяется, когда ширина меньше XL) */
+@media (max-width: 1199.98px) { /* Брейкпоинт 'xl' */
+
+    /* Стилизуем контейнер, который открывается */
+    .navbar-collapse {
+        /* *** УДАЛИТЬ ИЛИ ЗАКОММЕНТИРОВАТЬ ЭТИ СТРОКИ: *** */
+        /* position: absolute; */
+        /* top: 100%; */
+        /* left: 0; */
+
+        /* Этого достаточно, чтобы контент двигался */
+        width: 100%;
+
+        /* Принудительно задаем фон, чтобы он закрыл контент */
+        background-color: black;
+
+        /* Добавляем вертикальный отступ для воздуха */
+        padding: 20px 0;
+    }
+
+    /* Стилизуем ссылки, чтобы они были крупными и с хорошими отступами */
+    .navbar-collapse .nav-link {
+        font-size: 1.5rem;
+        /* Отступы сверху/снизу для каждого пункта */
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        /* Отступ слева, чтобы отделить от края */
+        padding-left: 30px !important;
+        color: white !important;
+    }
+}

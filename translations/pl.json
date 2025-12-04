@@ -1,0 +1,8 @@
+{
+  "home": "Główna",
+  "contact": "Kontakt",
+  "gallery": "Galeria",
+  "description": "Fotograf to profesjonalista, który tworzy zdjęcia za pomocą aparatu i jest jednocześnie artystą i technikiem. Jego praca obejmuje wybór tematu, ustawienie sprzętu, wykonanie zdjęć i ich obróbkę za pomocą specjalistycznego oprogramowania.\nFotograf może pracować w różnych gatunkach, od reportażu po reklamę komercyjną, a jego głównym celem jest przekazanie emocji, atmosfery i opowiedzenie historii za pomocą obrazów.",
+  "contact_title": "Kontaktować się",
+  "contact_body": "Jeśli chcesz, abym wykonał dla Ciebie sesję zdjęciową, zadzwoń: {phone} lub napisz maila: {email}"
+}
